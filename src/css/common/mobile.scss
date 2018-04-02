@@ -1,0 +1,116 @@
+$yh:"Microsoft yahei";
+
+
+
+html {
+//    font-size: 62.5%; 
+   font-family:$yh;
+   font-size:-webkit-calc(100vw/6.4);
+   
+}
+
+html,body,h1,h2,h3,h4,h5,h6,blockquote,ol,ul,dl,dd,p,textarea,input,select,option,form,div,li,p{
+    margin:0; padding:0;
+    box-sizing: border-box;
+}
+body{
+    -webkit-tap-highlight-color:transparent;
+    font-size:24px;
+}
+ 
+ol,ul,textarea,input,option,th,td {
+    padding:0;
+     margin:0; 
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size:100%;
+}
+
+table {
+    border-collapse:collapse;border-spacing: 0;
+}
+ul,ol { 
+    list-style-type:none;
+}
+.clearfix:after {
+    content:'.';display:block;height:0;clear:both;visibility:hidden;
+}
+.clearfix {*zoom:1;}
+.clear {
+    clear:both;height:0;overflow:hidden;
+}
+
+input[type=text],textarea{
+    -webkit-appearance:none;
+}
+
+
+
+input:focus{
+    -webkit-user-modify:read-write-plaintext-only;
+}
+fieldset, img {
+    border: 0;
+}
+img{
+    display: block;
+}
+a {
+    text-decoration:none;
+    color: #000;
+}
+a,textarea,input{
+    outline:none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+textarea {
+    overflow:auto;resize:none;
+}
+
+
+
+.hidden {
+    display: none!important;
+    
+    // visibility: hidden;
+}
+
+@keyframes right-in{
+    0%{
+        transform:translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0);
+        opacity: 1;
+    }
+}
+
+.right-in{
+    animation: right-in .8s  both ease;
+}
+
+// antd特殊处理
+
+html:not([data-scale]) .am-button-primary::before{
+    border: 0!important;
+}
+html:not([data-scale]) .am-button::before{
+    border-radius: 0!important;
+}
+
+.slider-frame { touch-action: none; }
+
+
+.noscroll{
+height: 100%;
+overflow: hidden;
+}

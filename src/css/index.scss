@@ -1,0 +1,11 @@
+@import './common/reset.css';
+@import './common/mobile';
+html,body,#app{
+    width:100%;
+    height: 100%;
+}
+.homeslide{
+    display: block;
+    width: 100%;
+    height: auto;
+}
